@@ -1,0 +1,519 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: black;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 10%;
+  position: relative;
+  z-index: 10;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 21px;
+  cursor: pointer;
+}
+
+.no-style {
+  all: revert;
+}
+
+.intro img.banner {
+  width: 700px;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.links {
+  text-decoration: none;
+  background: -webkit-linear-gradient(left, #efe277, #c67c69);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.links:hover {
+  -webkit-text-fill-color: #007bff;
+}
+
+.bar {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  transition: all 0.3s ease;
+}
+
+.bar,
+.bar:before,
+.bar:after {
+  content: "";
+  display: block;
+}
+
+.nav-links {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: right 0.3s ease;
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  border: solid 1px #007bff;
+  border-radius: 5px;
+  background-color: #f67280;
+  color: white;
+}
+
+.nav-links ul li a:hover {
+  padding: 15px 0;
+}
+
+.close {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 11;
+}
+
+.navbar h1 {
+  font-size: 20px;
+  background: -webkit-linear-gradient(left, #264653, #f67280);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Noto Serif JP", serif;
+}
+.intro {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.neon-sign {
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  background: -webkit-linear-gradient(left, #7d5a50, #f6d8ac);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.japanese-greeting,
+.sub-greeting,
+.introduction-text,
+.shouko-essence p,
+.explore-world p {
+  font-family: "Noto Serif JP", serif;
+  color: white;
+  margin: 10px 0;
+}
+
+.introduction h2,
+.blend-description {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: white;
+  margin: 20px 0;
+}
+
+.shouko-essence,
+.explore-world {
+  margin: 20px auto;
+  width: 80%;
+}
+
+.shouko-essence p,
+.explore-world p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: white;
+}
+
+.cultural-affinity:before,
+.anime-aficionado:before,
+.tech-savvy-guide:before,
+.omotenashi:before,
+.safe-wholesome:before,
+.engaging-dialogues:before,
+.gaming-entertainment:before,
+.manga-mania:before,
+.blend-description,
+.introduction-text {
+  font-style: italic;
+  color: white;
+}
+
+.intro img {
+  width: 300px;
+  border-radius: 5px;
+  transition: opacity 1s ease;
+}
+
+.social-links a {
+  color: #f67280;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: white;
+}
+
+.animated {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.animate {
+  opacity: 1 !important;
+}
+
+.image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image-container img {
+  width: 350px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Resetting default margin, padding, and font */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: black;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the navigation bar */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 10%;
+  position: relative;
+  z-index: 10;
+}
+
+/* Styling for the hamburger menu icon */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 21px;
+  cursor: pointer;
+}
+
+/* Styling for the bars in the hamburger menu icon */
+.bar {
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  transition: all 0.3s ease;
+}
+
+.bar,
+.bar:before,
+.bar:after {
+  content: "";
+  display: block;
+}
+
+/* Styling for the navigation links */
+.nav-links {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: right 0.3s ease;
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  border: none;
+  border-radius: 5px;
+  background-color: #353536;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for the close button in the navigation */
+.close {
+  display: none;
+  font-size: 40px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 11;
+}
+
+/* Styling for the heading in the navigation bar */
+.navbar h1 {
+  font-size: 20px;
+  background: -webkit-linear-gradient(left, #264653, #f67280);
+  background: linear-gradient(to right, #264653, #f67280);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Noto Serif JP", serif;
+}
+
+/* Styling for the introductory section */
+.intro {
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* Importing fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=montserrat:wght@700&display=swap");
+
+/* Styling for the introduction section */
+.introduction {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #7f6f5784;
+}
+
+.introduction-text,
+.shapesy-essence,
+.tech-welcome,
+.sub-greeting,
+.explore-world p {
+  font-family: "Roboto", sans-serif;
+  color: #e0e0e0;
+  margin: 20px auto;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.intro-heading,
+.blend-description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #f67280;
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.blend-description {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  background: -webkit-linear-gradient(left, #c2b97f, #90a331);
+  background: linear-gradient(to right, #c2b97f, #90a331);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.image-container {
+  margin-top: 30px;
+}
+
+.image-container img {
+  display: block;
+  max-width: 90%;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  height: auto;
+}
+
+.text-below-image {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+  color: #e0e0e0;
+  max-width: 600px;
+  line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  width: 700px;
+  display: flex;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #4a4a4a;
+  font-family: "Poppins", sans-serif;
+}
+
+.card p {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #333;
+}
+
+.cultural-affinity {
+  background-color: #e3f2fd;
+}
+.anime-aficionado {
+  background-color: #fffde7;
+}
+.tech-savvy-guide {
+  background-color: #e8f5e9;
+}
+.omotenashi {
+  background-color: #fce4ec;
+}
+.safe-wholesome {
+  background-color: #ede7f6;
+}
+
+@media (max-width: 960px) {
+  .card {
+    flex-basis: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-basis: 100%;
+  }
+}
+
+/* Styling for the introductory image */
+.intro img {
+  width: 550px;
+  border-radius: 15px;
+  transition: opacity 1s ease;
+}
+
+.intro img.shouko {
+  width: 400px;
+}
+
+/* Styling for the support card */
+.support-card {
+  background-color: #a03e3b;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 1em;
+  border: none;
+}
+
+.support-card p {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+.support-card h3 {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+.support-card:hover {
+  transform: scale(1.05);
+  color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the image container */
+.image-container-2 {
+  text-align: center;
+  margin: 20px 0;
+  background-color: #ff161b1d;
+}
+
+/* Styling for responsive images */
+.responsive-image {
+  display: block;
+  max-width: 90%;
+  height: auto;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+}
